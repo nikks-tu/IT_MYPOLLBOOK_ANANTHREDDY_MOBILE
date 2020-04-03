@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_light_gray"
+    android:orientation="vertical">
+
+ <androidx.recyclerview.widget.RecyclerView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/rcv_complaints"
+     android:layout_marginLeft="@dimen/view_margin"
+     android:layout_marginRight="@dimen/view_margin"
+     android:layout_marginTop="@dimen/view_margin"
+     android:layout_marginBottom="@dimen/view_margin"
+     android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll_no_record"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No Complaints Found"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/tv_no_data"/>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/add"
+        android:tint="@color/color_white"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="40dp"
+        android:id="@+id/fab_add_complaint" />
+
+
+</FrameLayout>
+
